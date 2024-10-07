@@ -256,5 +256,5 @@ metadata.channel = seismicData(1).ChannelIdentifier;
         metadata.dip_deg = seismicData(1).Dip;
     end
     
-    % You can expand this section to add more metadata fields as necessary
+    
 end
