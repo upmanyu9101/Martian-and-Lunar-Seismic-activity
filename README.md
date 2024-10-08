@@ -58,7 +58,7 @@
 <ul>
   <li><a href="https://mars.nasa.gov/insight/">NASA InSight Mission</a></li>
   <li><a href="https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1969-059A-04">Apollo Seismic Experiment</a></li>
-  <li><a href="https://www.nasa.gov/feature/china-s-chang-e-4-mission">China’s Chang’e 4 Mission</a></li>
+  
 </ul>
 
 <p>Feel free to contribute and explore the seismic mysteries of Mars and the Moon!</p>
