@@ -8,7 +8,7 @@
 
 <ul>
   <li><strong>Mars</strong>: Seismic data from NASA's <a href="https://mars.nasa.gov/insight/">InSight</a> mission is used to investigate marsquakes. These seismic events help reveal the internal structure of Mars, including its core, mantle, and crust.</li>
-  <li><strong>Moon</strong>: Lunar seismic data from the Apollo missions and China’s <a href="https://www.nasa.gov/feature/china-s-chang-e-4-mission">Chang’e 4</a> mission is analyzed to understand the seismic activity and tectonic history of the Moon.</li>
+  <li><strong>Moon</strong>: Lunar seismic data from the Apollo missions is analyzed to understand the seismic activity and tectonic history of the Moon.</li>
 </ul>
 
 <p>Through this repository, we aim to develop tools and methods to process, analyze, and visualize seismic data from both Mars and the Moon, enhancing our understanding of their geophysics and geological history.</p>
