@@ -30,7 +30,7 @@
 <h2>Seismic Data Sources:</h2>
 <ul>
   <li><strong>Mars</strong>: Data from NASA's <a href="https://mars.nasa.gov/insight/">InSight</a> mission, which includes recordings of marsquakes detected on the Martian surface.</li>
-  <li><strong>Moon</strong>: Data from the <a href="https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1969-059A-04">Apollo Seismic Experiment</a> and China’s <a href="https://www.nasa.gov/feature/china-s-chang-e-4-mission">Chang’e 4</a> mission, offering insight into the Moon’s seismic activity.</li>
+  <li><strong>Moon</strong>: Data from the <a href="https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1969-059A-04">Apollo Seismic Experiment</a>, offering insight into the Moon’s seismic activity.</li>
 </ul>
 
 <h2>Technologies and Tools:</h2>
