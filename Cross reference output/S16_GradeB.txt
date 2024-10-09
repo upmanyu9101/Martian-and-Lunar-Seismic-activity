@@ -1,0 +1,56 @@
+xa.s16.00.mhz.1973-08-25HR00_evid00443
+
+>> cross_reference_mseed_with_onlycsv
+Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.
+
+
+Analyzing File: C:\Projects\Nasa SpaceApps\space_apps_2024_seismic_detection\space_apps_2024_seismic_detection\data\lunar\test\data\S16_GradeB\xa.s16.00.mhz.1973-08-25HR00_evid00443.mseed
+
+Match found at time 25-Aug-1973 00:00:00:
+    time_abs__Y__m__dT_H__M__S__f_    time_rel_sec_    velocity_m_s_
+    ______________________________    _____________    _____________
+
+
+       1973-08-25T00:00:00.596              0           -1.7141e-14 
+
+No match found or mismatch in CSV data.
+>> 
+
+xa.s16.00.mhz.1973-12-18HR00_evid00487
+
+>> cross_reference_mseed_with_onlycsv
+Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.
+
+
+Analyzing File: C:\Projects\Nasa SpaceApps\space_apps_2024_seismic_detection\space_apps_2024_seismic_detection\data\lunar\test\data\S16_GradeB\xa.s16.00.mhz.1973-12-18HR00_evid00487.mseed
+
+Match found at time 18-Dec-1973 00:00:00:
+    time_abs__Y__m__dT_H__M__S__f_    time_rel_sec_    velocity_m_s_
+    ______________________________    _____________    _____________
+
+
+       1973-12-18T00:00:00.227              0                0      
+
+No match found or mismatch in CSV data.
+>> 
+
+xa.s16.00.mhz.1974-11-14HR00_evid00587
+
+>> cross_reference_mseed_with_onlycsv
+Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.
+
+
+Analyzing File: C:\Projects\Nasa SpaceApps\space_apps_2024_seismic_detection\space_apps_2024_seismic_detection\data\lunar\test\data\S16_GradeB\xa.s16.00.mhz.1974-11-14HR00_evid00587.mseed
+
+Match found at time 14-Nov-1974 00:00:00:
+    time_abs__Y__m__dT_H__M__S__f_    time_rel_sec_    velocity_m_s_
+    ______________________________    _____________    _____________
+
+
+       1974-11-14T00:00:00.152              0           -2.0893e-17 
+
+No match found or mismatch in CSV data.
+>> 
