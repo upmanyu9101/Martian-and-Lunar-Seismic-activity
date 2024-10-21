@@ -1,0 +1,3 @@
+*The original code uses a switch for only lunar and martian seismic data based on their planetary parameters listed out as the p and s wave velocities and their densities
+
+The generality lies in the fact that the switch can be omitted and the parameters can be adjusted for theoretically any terrestrial object in terms of the p and s wave velocities and absolute densities.
