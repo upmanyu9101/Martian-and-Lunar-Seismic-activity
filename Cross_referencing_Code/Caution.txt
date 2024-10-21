@@ -1,0 +1,11 @@
+The current code is checking absolute equivalency between the values in the MSEED files and the CSV files. 
+
+The code is configurable to check the values up to a certain threshold depending upon the accuracy needed for its application:
+
+This can be configured by changing the following lines:
+
+(current) line 33 - velocityTolerance = 0;
+(modded) line 33 - velocityTolerance = n; where n can be whatever value required based on required degree of accuracy eg. (1e+-3)
+
+(current) line 52 - if abs(mseedVelocity - csvVelocity) == velocityTolerance;
+(modified) line 52 - if abs(mseedVelocity - csvVelocity) <= velocityTolerance;
