@@ -1,3 +1,77 @@
 *The original code uses a switch for only lunar and martian seismic data based on their planetary parameters listed out as the p and s wave velocities and their densities
 
 The generality lies in the fact that the switch can be omitted and the parameters can be adjusted for theoretically any terrestrial object in terms of the p and s wave velocities and absolute densities.
+
+The current thresholds have been fine tuned for a generalised martain AND lunar detection but they also can be tuned in accordance to the data being analysed.
+
+The following is a list of the configurable values:
+
+ - Noise Threshold (noiseThreshold):
+
+Purpose: Defines the threshold for detecting significant seismic events based on the signal's amplitude. Any data points with an absolute amplitude value greater than this threshold will be considered part of an event.
+Default: 0.01
+
+- Low Frequency Threshold (lowFreqThreshold):
+
+Purpose: Defines the lower boundary of the frequency band for analyzing seismic data. This is used in frequency-domain analysis (FFT) to isolate specific frequency components.
+Default: 1.5 (Hz)
+
+ - High Frequency Threshold (highFreqThreshold):
+
+Purpose: Defines the upper boundary of the frequency band for analyzing seismic data. This is used to capture higher-frequency components like P-waves and S-waves.
+Default: 5 (Hz)
+
+ - P-wave Velocity (pWaveVelocity):
+
+Purpose: Represents the velocity of the P-wave (primary wave) through the crust (either lunar or Martian). This is used to estimate the time difference between P-wave and S-wave arrivals, as well as to calculate the seismic moment.
+Default: 5.0 (km/s for lunar data)
+Adjustable for different crusts: Users can set this for both Martian and lunar crusts.
+
+ - S-wave Velocity (sWaveVelocity):
+
+Purpose: Represents the velocity of the S-wave (secondary wave) through the crust (either lunar or Martian). This is used for distance estimation and seismic moment calculations.
+Default: 2.9 (km/s for lunar data)
+Adjustable for different crusts: Users can set this for both Martian and lunar crusts.
+
+ - Crust Density (density):
+
+Purpose: Represents the density of the crust (either lunar or Martian), which is used in the calculation of seismic moment and energy.
+Default: 2500 (kg/m³ for lunar data)
+Adjustable: Users can input a different value for different environments (e.g., Martian crust).
+Filter Low Cutoff Frequency (filterLowCutoff):
+
+Purpose: The lower cutoff frequency for the bandpass filter, which is applied to remove low-frequency noise from the seismic signal.
+Default: 0.1 (Hz)
+
+ - Dynamic Upper Cutoff Frequency (filterHighCutoff):
+
+Purpose: The upper cutoff frequency for the bandpass filter. This is calculated dynamically based on the Nyquist frequency (sampling rate).
+Default: Min(nyquistFreq * 0.8, 10) where nyquistFreq = fs / 2
+Purpose: It limits the upper frequencies being analyzed and filtered to remove high-frequency noise.
+
+ - Distance Estimate for Seismic Moment Calculation (distanceEstimate):
+
+Purpose: Assumed distance between the seismic event and the recording station. This is used to estimate the seismic moment.
+
+ - Signal-to-Noise Ratio (SNR) Calculation:
+
+Noise Region Definition:
+Purpose: The first 10% of the signal is assumed to be noise for SNR calculation.
+Region: Defined as the first 10% of the time range.
+
+ - Signal Region Definition:
+
+Purpose: The remaining 90% of the signal is assumed to be the signal for SNR calculation.
+Region: Defined as the rest of the signal after the noise region.
+
+ - Coda Wave Threshold (threshold inside detect_coda_start):
+
+Purpose: Defines the threshold to detect the start of coda waves for Q-factor analysis.
+Default: 0.01 * max(amplitude) (1% of the maximum amplitude)
+
+ - Spectral Ratio Frequency Ranges (lowFreq and highFreq in calc_spectral_ratio):
+
+Purpose: Used to calculate the spectral ratio between S-wave and P-wave by summing power spectral densities within specific frequency ranges.
+Default:
+lowFreq = 1.5 (Hz)
+highFreq = 5 (Hz)
